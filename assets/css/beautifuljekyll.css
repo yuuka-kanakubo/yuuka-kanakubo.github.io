@@ -20,7 +20,8 @@ layout: null
 
   /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
-  --header-font: 'Open Sans', 'Helvetica';
+  --header-font: 'Lora', 'Helvetica';
+  /*--header-font: 'Open Sans', 'Helvetica';*/
   --mid-col: #808080;
 }
 
