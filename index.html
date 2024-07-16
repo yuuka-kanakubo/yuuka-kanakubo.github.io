@@ -6,50 +6,64 @@ cover-img:
   - "/assets/img/header_seattle_dark.jpg" : "Seattle, U.S. (2022)"
 ---
 
+<!-- Settings for several diagrams -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+	.title-image {
+	    max-width: 100%;
+	    height: auto;
+	}
+      .shape {
+        height: 180px;
+        width: 170px;
+        background-color: #9F8C76;
+        border-radius: 80px;
+        margin-bottom: 30px;
+        float: left;
+        margin-right: 20px;
+      }
+      .shape2 {
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+      }
+      .shape2 p {
+                  margin: 0;
+                  padding: 10px;
+                  text-align: center;
+                  font-size: 12px;
+                  font-family: 'Open Sans', serif;
+                  color: #E8E4C9;
+      }
+      .bold-text {
+                  font-weight: bold;
+                 }
+      .spacer {
+                  height: 20px; /* Adjust height as needed */
+              }
+      .rotate-image {
+                /* Adjust the angle as needed */
+                /*  transform: rotate(45deg); */
+                  transform: scaleY(-1);
+                /*  margin-top: 100px; */
+              }
+      .container {
+          display: flex;
+          align-items: center;
+      }
+    </style>
+</head>
+
+<header>
+        <img src="assets/img/yuuka_title.png" alt="Title" class="title-image">
+</header>
+
 <h1> About me </h1>
 <p>Hello! I am Yuuka Kanakubo, a postdoc working in relativistic nuclear collisions. </p>
 
-<!-- Settings for several diagrams -->
-<head>
-<style>
-.shape {
-  height: 180px;
-  width: 170px;
-  background-color: #9F8C76;
-  border-radius: 80px;
-  margin-bottom: 30px;
-  float: left;
-  margin-right: 20px;
-}
-.shape2 {
-  border-radius: 30px;
-}
-.shape2 p {
-            margin: 0;
-            padding: 10px;
-            text-align: center;
-            font-size: 12px;
-            font-family: 'Open Sans', serif;
-            color: #E8E4C9;
-}
-.bold-text {
-            font-weight: bold;
-           }
-.spacer {
-            height: 20px; /* Adjust height as needed */
-        }
-.rotate-image {
-          /* Adjust the angle as needed */
-          /*  transform: rotate(45deg); */
-            transform: scaleY(-1);
-          /*  margin-top: 100px; */
-        }
-.container {
-    display: flex;
-    align-items: center;
-}
-</style>
-</head>
 
 <h1> Experience </h1>
 <div class="spacer"></div>
@@ -60,7 +74,11 @@ cover-img:
  </p>
 </div>
 <img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved" style="width:90px;height:30px;">
-<div class="shape shape2"></div>
+<div class="shape shape2">
+ <p> <span class="bold-text">  </span>,
+     Japan Society for the Promotion of Science
+ </p>
+</div>
 <img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved" style="width:90px;height:30px;" class="rotate-image">
 <div class="shape shape2"></div>
 </div>
