@@ -114,14 +114,14 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-page-col: "#FFFFFF"
+page-col: "#E8E4C9"
 text-col: "#404040"
 link-col: "#008AFF"
-hover-col: "#0085A1"
-#navbar-col: "#EAEAEA"
-navbar-text-col: "#C8AD7F"
+hover-col: "#4A412A"
+navbar-col: "#9F8C76"
+navbar-text-col: "#FFFFFF"
 #navbar-border-col: "#DDDDDD"
-footer-col: "#C6BA8B"
+footer-col: "#786D5F"
 footer-text-col: "#E8E4C9"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
@@ -130,7 +130,7 @@ footer-hover-col: "#0085A1"
 # instead of colour
 
 #page-img: "/assets/img/header_seattle.jpg"
-navbar-img: "/assets/img/header_seattle_dark.jpg"
+#navbar-img: "/assets/img/header_seattle_dark.jpg"
 #footer-img: "/assets/img/bgimage.png"
 
 
