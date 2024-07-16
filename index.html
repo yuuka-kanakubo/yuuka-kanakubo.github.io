@@ -12,12 +12,6 @@ cover-img:
 <!-- Settings for several diagrams -->
 <head>
 <style>
-.circle {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-color: #9F8C76;
-}
 .shape {
   height: 150px;
   width: 150px;
@@ -30,58 +24,17 @@ cover-img:
 .shape2 {
   border-radius: 30px;
 }
-
-#wrapper {
-        width: 680px;
-        display:table;
-        margin: auto;
-    }
-    #wrapper > div {
-        display: inline-block;
-    }
-    .circle {
-        position:relative;
-        padding: 20px;
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        background-color: #9F8C76;
-        border: solid 1px #43302E;
-        z-index: 999;
-    }   
-    .line-top {
-        width: 120px;
-        height:60px;
-        z-index: -1;
-        background: transparent;
-        border: none;
-        border-top: dashed 2px #43302E;
-        padding: 40px 40px;
-        border-radius: 50%;
-        margin: 20px -50px 0;
-    }
-    .line-bottom {
-        width: 120px;
-        height:60px;
-        z-index: -1;
-        background: transparent;
-        border: none;
-        border-bottom: dashed 2px #43302E;
-        padding: 40px 40px;
-        border-radius: 0 0 50% 50%;
-        margin: 0 -65px;
-    }
-
+.rotate-image {
+          /* Adjust the angle as needed */
+            transform: rotate(45deg);
+          /*  margin-top: 100px; */
+        }
 </style>
 </head>
 
 <h1> Experience </h1>
 <div class="shape shape2"></div>
-
-<div id="wrapper">
-    <div class="circle"></div>
-    <div class="line-top"></div>
-    <div class="circle"></div>
-    <div class="line-bottom"></div>
-    <div class="circle"></div>
-    </div>
+<img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved">
+<div class="shape shape2"></div>
+<img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved", class="rotate-image">
+<div class="shape shape2"></div>
