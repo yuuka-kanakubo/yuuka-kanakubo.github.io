@@ -72,17 +72,20 @@ cover-img:
                  height: 20px;
                  margin-right: 10px;
              }
-	.no-bullets li {
-	        list-style-type:none;
-	    }
         /* Custom bullet points with PNG image */
+        .lists-container {
+            display: flex;
+            flex-direction: column; /* Align items vertically */
+            align-items: flex-start; /* Align items to the start of the container */
+            gap: 20px; /* Space between the lists */
+        }
         ul.custom-bullets {
             list-style-type: none; /* Remove default bullets */
             padding: 0;
         }
         ul.custom-bullets li {
-            font-family: 'Arial', sans-serif; /* Change font */
-            font-size: 15px; /* Change font size */
+            font-family: 'Lora'; /* Change font */
+            font-size: 18px; /* Change font size */
             /*background-color: ;  Background color */
             margin: 5px 0;
             padding: 10px;
@@ -91,6 +94,32 @@ cover-img:
             padding-left: 40px; /* Add space for the image */
         }
         ul.custom-bullets li::before {
+            content: '';
+            display: inline-block;
+            width: 24px; /* Width of the image */
+            height: 24px; /* Height of the image */
+            background-image: url('assets/img/icon_bullet.png'); /* Path to your PNG image */
+            background-size: cover;
+            position: absolute;
+            left: 10px; /* Adjust position */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        ul.custom-bullets_flower {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+        }
+        ul.custom-bullets_flower li {
+            font-family: 'Lora'; /* Change font */
+            font-size: 15px; /* Change font size */
+            /*background-color: ;  Background color */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+            padding-left: 40px; /* Add space for the image */
+        }
+        ul.custom-bullets_flower li::before {
             content: '';
             display: inline-block;
             width: 24px; /* Width of the image */
@@ -132,10 +161,10 @@ cover-img:
 	    Faculty of Science and Technology, Sophia University 
 	 </p>
 	</div>
-        <ul class="no-bullets"> 
-        <li> <img src= "assets/img/icon_bullet.png" class="listImage"> Apr 2018 - Mar 2020, Tokyo Japan </li> 
-        <li> <img src= "assets/img/icon_bullet.png" class="listImage"> Teaching assistant in physics courses </li> 
-        <li> <img src= "assets/img/icon_bullet.png" class="listImage"> Mentoring bachelor students </li> 
+        <ul class="custom-bullets"> 
+        <li> Apr 2018 - Mar 2020, Tokyo Japan </li> 
+        <li> Teaching assistant in physics courses </li> 
+        <li> Mentoring bachelor students </li> 
 	</ul>
 </div>
 
@@ -147,11 +176,12 @@ cover-img:
 	     Japan Society for the Promotion of Science
 	 </p>
 	</div>
-        <ul class="no-bullets"> 
-        <li> <img src= "assets/img/icon_bullet.png" class="listImage"> Apr 2020 - Sep 2022, Tokyo Japan </li> 
-        <li> <img src= "assets/img/icon_bullet.png" class="listImage"> <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-20J20401/">JSPS KAKENHI:20J20401</a> </li>
+        <div class="lists-container">
+        <ul class="custom-bullets"> 
+        <li> Apr 2020 - Sep 2022, Tokyo Japan </li> 
+        <li> <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-20J20401/">JSPS KAKENHI:20J20401</a> </li>
 	</ul>
-        <ul class="custom-bullets">
+        <ul class="custom-bullets_flower">
          <li> <a href="https://fst.sophia.ac.jp/news/20190528/post-0-42">
               Global Award for <br>
               Young Women Researchers (2019)</a> </li>
@@ -159,6 +189,7 @@ cover-img:
               Nuclear Physics A Elsevier <br>
               Young Scientist Awards (2019)</a> </li>
 	</ul>
+        </div>
 </div>
         <img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved" style="width:150px;height:50px;" class="rotate-image2">
 
