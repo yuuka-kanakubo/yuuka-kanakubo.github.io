@@ -75,6 +75,34 @@ cover-img:
 	.no-bullets li {
 	        list-style-type:none;
 	    }
+        /* Custom bullet points with PNG image */
+        ul.custom-bullets {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+        }
+        ul.custom-bullets li {
+            font-family: 'Arial', sans-serif; /* Change font */
+            font-size: 15px; /* Change font size */
+            /*background-color: ;  Background color */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+            padding-left: 40px; /* Add space for the image */
+        }
+        ul.custom-bullets li::before {
+            content: '';
+            display: inline-block;
+            width: 24px; /* Width of the image */
+            height: 24px; /* Height of the image */
+            background-image: url('assets/img/icon_bullet_flower.png'); /* Path to your PNG image */
+            background-size: cover;
+            position: absolute;
+            left: 10px; /* Adjust position */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
       .circle-image {
           width: 200px;
           height: 200px;
@@ -123,13 +151,11 @@ cover-img:
         <li> <img src= "assets/img/icon_bullet.png" class="listImage"> Apr 2020 - Sep 2022, Tokyo Japan </li> 
         <li> <img src= "assets/img/icon_bullet.png" class="listImage"> <a href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-20J20401/">JSPS KAKENHI:20J20401</a> </li>
 	</ul>
-        <ul class="no-bullets"> 
-         <li> <img src= "assets/img/icon_bullet_flower.png" class="listImage"> 
-              <a href="https://fst.sophia.ac.jp/news/20190528/post-0-42">
+        <ul class="custom-bullets">
+         <li> <a href="https://fst.sophia.ac.jp/news/20190528/post-0-42">
               Global Award for <br>
               Young Women Researchers (2019)</a> </li>
-         <li> <img src= "assets/img/icon_bullet_flower.png" class="listImage"> 
-              <a href="https://indico.cern.ch/event/792436/contributions/3559433/attachments/1942040/3220599/QM2019_YSAward.pdf">
+         <li> <a href="https://indico.cern.ch/event/792436/contributions/3559433/attachments/1942040/3220599/QM2019_YSAward.pdf">
               Nuclear Physics A Elsevier <br>
               Young Scientist Awards (2019)</a> </li>
 	</ul>
