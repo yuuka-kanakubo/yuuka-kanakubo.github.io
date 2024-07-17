@@ -14,6 +14,8 @@ cover-img:
         width: 300px;
         border-radius: 50%;
         background-color: #9F8C76;
+        justify-content: center;
+        align-items: center;
       }
       .shape {
         height: 180px;
@@ -31,7 +33,7 @@ cover-img:
       }
       .circle p {
                   margin: 0;
-                  padding: 20px;
+                  padding: 0px;
                   text-align: center;
                   font-size: 18px;
                   font-family: 'Open Sans', serif;
@@ -45,16 +47,21 @@ cover-img:
               }
       .rotate-image {
                 /* Adjust the angle as needed */
-                  transform: rotate(45deg); 
+                  transform: rotate(90deg); 
                 /*  transform: scaleY(-1); */
                 /*  margin-top: 100px; */
               }
-      .rotate-image2 {
+      .flip-image {
                 /* Adjust the angle as needed */
-                  transform: rotate(45deg); 
                   transform: scaleY(-1); 
                 /*  margin-top: 100px; */
               }
+      .circle-image {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+      }
       .container {
           display: flex;
           align-items: center;
@@ -78,7 +85,7 @@ cover-img:
 	</div>
 </div>
 
-<img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved" style="width:120px;height:40px;" class="rotate-image">
+<img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved" style="width:150px;height:50px;" class="rotate-image">
 
 <div class="container">
 	<div class="circle">
@@ -86,8 +93,8 @@ cover-img:
 	     Japan Society for the Promotion of Science
 	 </p>
 	</div>
-        <img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved" style="width:120px;height:40px;" class="rotate-image2">
 </div>
+        <img src="assets/img/arrow_dashedcurved.png" alt="arrow_dashedcurved" style="width:150px;height:50px;" class="rotate-image flip-image">
 
 <div class="container">
 	<div class="circle">
