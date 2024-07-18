@@ -32,6 +32,39 @@ cover-img:
            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Add a subtle shadow */
        }
 
+       /* Container for the GIF and overlay */
+       .gif-container {
+           position: relative;
+           display: inline-block;
+       }
+       
+       /* GIF image */
+       .gif-container img {
+           display: block;
+       }
+       
+       /* Overlay text */
+       .overlay {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.4); /* 40% transparent black background */
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           opacity: 0;
+           transition: opacity 0.5s ease; /* Fading effect */
+       }
+       
+       /* Show overlay on hover */
+       .gif-container:hover .overlay {
+           opacity: 1;
+       }
+
+
       .circle {
         height: 300px;
         width: 300px;
@@ -260,7 +293,8 @@ cover-img:
     </blockquote>
 </div>
 
-<div class="container">
+<div class="gif-container">
 <img src="assets/img/MCEventGenerator/PBPB_xy20210827.gif" alt="PbPbxyplane">
+<div class="overlay">Collision!</div>
 </div>
 
