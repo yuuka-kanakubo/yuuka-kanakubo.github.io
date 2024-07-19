@@ -23,7 +23,10 @@ navbar-links:
   About Me: "aboutme"
   My research interests:
     - Monte-Carlo simulation of high-energy nuclear collisions: "MCEventGenerator"
-  Author's home: "https://yuuka-kanakubo.github.io/"
+  Publications: "Publications"
+  Talks:
+    - on Research: "TalkResearch"
+    - on Outreach: "TalkOutreach"
 
 ################
 # --- Logo --- #
