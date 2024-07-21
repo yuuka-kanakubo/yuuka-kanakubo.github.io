@@ -8,7 +8,7 @@ Coming soon!
 
 <div class="bookmark">
   <div class="bookmark-image">
-   <img src="assets/img/Publications/180610329.jpg" alt="Image">
+   <img src="assets/img/Publications/180610329.png" alt="Image">
   </div>
   <div class="bookmark-content">
    <h2>Title of Publication 1</h2>
