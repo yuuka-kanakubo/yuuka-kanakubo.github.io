@@ -142,6 +142,31 @@ img {
   margin-top: -1.5625rem;
 }
 
+/* Basic styling for the bookmark container */
+.bookmark {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the publication image */
+.bookmark-image img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Styling for the publication content */
+.bookmark-content {
+    flex: 1;
+}
+
+
+
+
+
 /* Comments */
 
 .disqus-comments {
