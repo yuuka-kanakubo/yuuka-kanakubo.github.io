@@ -28,16 +28,58 @@ subtitle: to be updated
 	  flex: 1;
       }
 
+.publications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.publication {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publication img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.publication-details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.publication-details h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.publication-details p {
+    margin: 5px 0;
+}
+
+.publication-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.publication-details a:hover {
+    text-decoration: underline;
+}
+
 
       }
     </style>
 </head>
-
-<h1>About Me</h1>
-<div class="container">
-<p>This is the about me page written in HTML.</p>
-<img src="/assets/img/Publications/180610329.png" alt="test">
-</div>
 
 <div class="bookmark">
   <div class="bookmark-image">
@@ -50,3 +92,17 @@ subtitle: to be updated
    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 </div>
+
+
+    <div class="publications">
+        <div class="publication">
+            <img src="/assets/img/Publications/180610329.png" alt="Image">
+            <div class="publication-details">
+                <h2>Title of the Publication</h2>
+                <p><strong>Authors:</strong> Author 1, Author 2, Author 3</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.1234/example">10.1234/example</a></p>
+                <p><strong>Description:</strong> This is a short description of the publication.</p>
+            </div>
+        </div>
+        <!-- Repeat the above block for each publication -->
+    </div>
