@@ -44,23 +44,21 @@ subtitle: to be updated
     padding: 20px;
     width: 300px;
     display: flex;
+    align-items: flex-start;
+    position: relative;
     flex-direction: column;
-    align-items: center;
 }
 
 .publication img {
-    max-width: 100%;
+    max-width: 100px; /* Adjust the size as needed */
+    float: right;
+    margin-left: 20px;
     border-radius: 8px;
 }
 
+
 .publication-details {
     text-align: left;
-    margin-top: 10px;
-}
-
-.publication-details h2 {
-    font-size: 1.2em;
-    margin: 0;
 }
 
 .publication-details p {
@@ -96,7 +94,7 @@ subtitle: to be updated
 
     <div class="publications">
         <div class="publication">
-            <img src="/assets/img/Publications/180610329.png" alt="Image">
+            <img src="/assets/img/Publications/180610329.png" alt="Image" class="publication-image">
             <div class="publication-details">
                 <h2>Title of the Publication</h2>
                 <p><strong>Authors:</strong> Author 1, Author 2, Author 3</p>
