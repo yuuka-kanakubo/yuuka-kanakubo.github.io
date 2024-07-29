@@ -24,15 +24,18 @@ subtitle: to be updated
           align-items: flex-start;
           position: relative;
           flex-direction: column;
+          opacity: 0; /* Initially hidden */
+          transform: translateY(20px); /* Initial position */
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation */
       }
       
       .publication img {
           max-width: 500px; /* Adjust the size as needed */
+          object-fit: cover; /* Maintain aspect ratio and cover the area */
           float: right;
           margin-left: 20px;
           border-radius: 8px;
           max-height: 300px; /* Ensure the image doesn't overflow */
-          object-fit: cover; /* Maintain aspect ratio and cover the area */
       }
       
       .publication-details {
@@ -58,6 +61,11 @@ subtitle: to be updated
           overflow: hidden;
           text-overflow: ellipsis;
       }
+
+      .publication.visible {
+         opacity: 1; /* Fully visible */
+         transform: translateY(0); /* Final position */
+     }
 
     </style>
 </head>
@@ -91,3 +99,4 @@ subtitle: to be updated
         </div>
         <!-- Repeat the above block for each publication -->
     </div>
+    <script src="/assets/js/animations.js"></script>
