@@ -1,0 +1,63 @@
+---
+layout: page
+title: Talks on Research
+subtitle: to be updated
+---
+<head>
+    <style>
+     .presentations {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         padding: 20px;
+     }
+     
+     .presentation-card {
+         background-color: #ffffff;
+         border: 1px solid #b2dfdb;
+         border-radius: 12px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         margin: 15px;
+         padding: 20px;
+         width: 60%; /* Adjusted width */
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Animation */
+         cursor: pointer; /* Make it clickable */
+     }
+     
+     .presentation-card:hover {
+         transform: translateY(-5px); /* Slightly lift on hover */
+         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+     }
+     
+     .presentation-content {
+         text-align: left;
+     }
+     
+     .presentation-content h2 {
+         font-size: 1.4em;
+         margin: 0;
+         color: #004d40;
+     }
+     
+     .presentation-content p {
+         margin: 8px 0;
+         color: #004d40;
+     }
+    </style>
+</head>
+
+   <h1>Presentation History</h1>
+    <div class="presentations">
+        <div class="presentation-card">
+            <div class="presentation-content">
+                <h2>Conference Name</h2>
+                <p><strong>Date:</strong> January 15, 2023</p>
+                <p><strong>Place:</strong> New York, USA</p>
+            </div>
+        </div>
+        <!-- Repeat the above block for each presentation -->
+    </div>
+    <script src="/assets/js/animations_card.js"></script>
