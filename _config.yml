@@ -21,8 +21,8 @@ author: Yuuka Kanakubo
 
 navbar-links:
 #  About Me: "aboutme"
-  My research interests:
-    - Monte-Carlo simulation of high-energy nuclear collisions: "MCEventGenerator"
+#  My research interests:
+#    - Monte-Carlo simulation of high-energy nuclear collisions: "MCEventGenerator"
   Publications: "Publications"
   Talks:
     - on Research: "TalkResearch"
