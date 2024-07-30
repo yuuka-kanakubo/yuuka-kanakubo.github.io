@@ -26,19 +26,17 @@ subtitle: My scientific works on academic journals
           flex-direction: column;
           opacity: 0; /* Initially hidden */
           transform: translateY(20px); /* Initial position */
-          transition: opacity 0.6s ease-out, transform 0.6s ease-out, max-height 0.6s ease-out, padding 0.6s ease-out; /* Animation */
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation */
           cursor: pointer;
-          max-height: 200px;
-          overflow: hidden;
       }
       
       .publication img {
           max-width: 500px; /* Adjust the size as needed */
+          max-height: 300px; /* Ensure the image doesn't overflow */
           object-fit: cover; /* Maintain aspect ratio and cover the area */
           float: right;
           margin-left: 20px;
           border-radius: 8px;
-          max-height: 300px; /* Ensure the image doesn't overflow */
       }
       
       .publication-details {
@@ -63,14 +61,17 @@ subtitle: My scientific works on academic journals
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
+          transition: max-height 0.6s ease-out; /* Animation for expanding */
       }
 
-      .publication.expanded {
-          max-height: 1000px; /* Adjust as needed to fit the full content */
-          padding-bottom: 20px; /* Add padding for the expanded state */
+      .full-description {
+          display: none; /* Initially hidden */
+          margin-top: 10px;
       }
-      .publication.expanded .full-description {
-          display: block; /* Show when expanded */
+
+      .publication.expanded .description {
+          -webkit-line-clamp: unset; /* Remove line clamping */
+          max-height: 1000px; /* Adjust as needed to fit the full content */
       }
 
       .publication.visible {
@@ -152,7 +153,7 @@ in which low pT soft hadrons originate solely from core components. We finally s
             <img src="/assets/img/Publications/191010556.png" alt="Image" class="publication-image">
         </div>
         <!-- Repeat the above block for each publication -->
-        <div class="publication">
+        <div class="publication" data-description="We investigate the enhancement of yields of strange and multi-strange baryons in proton–proton (p+p), proton–lead (p+Pb), and lead–lead (Pb+Pb) collisions at Large Hadron Collider (LHC) energies from a dynamical core–corona initialization model. We first generate partons just after the collisions by using event generators. These partons dynamically generate the quark gluon plasma (QGP) fluids through the source terms in the hydrodynamic equations. According to the core–corona picture, this process tends to happen where the density of generated partons is high and their transverse momentum is low. Some partons do not fully participate in this process when they are in dilute regions or their transverse momentum is high, and subsequently fragment into hadrons through string fragmentation. In this framework, the final hadrons come from either chemically equilibrated fluids as in the conventional hydrodynamic models or string fragmentation. We calculate the ratio of strange baryons to charged pions as a function of multiplicity and find that it monotonically increases up to dNdeta~100 then saturates above. This suggests that the QGP fluids are partly created and that their fraction increases with multiplicity in p+p and p+Pb collisions at LHC energies.">
             <div class="publication-details">
                 <h2>Enhancement of strange baryons in high-multiplicity proton–proton and proton–nucleus collisions</h2>
                 <p><strong>Authors:</strong> Y. Kanakubo, M. Okai, Y. Tachibana, T. Hirano</p>

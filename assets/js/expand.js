@@ -3,15 +3,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     publications.forEach(publication => {
         publication.addEventListener('click', function() {
-            const fullDescription = this.querySelector('.full-description');
-            const description = this.getAttribute('data-description');
+            const description = this.querySelector('.description');
+            const fullDescription = this.getAttribute('data-description');
 
             if (this.classList.contains('expanded')) {
                 this.classList.remove('expanded');
-                fullDescription.textContent = '';
+                description.textContent = description.textContent.split(' ').slice(0, 20).join(' ') + '...'; // Truncate to initial state
             } else {
                 this.classList.add('expanded');
-                fullDescription.textContent = description;
+                description.textContent = fullDescription;
             }
         });
     });
