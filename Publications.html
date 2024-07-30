@@ -26,7 +26,10 @@ subtitle: My scientific works on academic journals
           flex-direction: column;
           opacity: 0; /* Initially hidden */
           transform: translateY(20px); /* Initial position */
-          transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation */
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out, max-height 0.6s ease-out, padding 0.6s ease-out; /* Animation */
+          cursor: pointer;
+          max-height: 200px;
+          overflow: hidden;
       }
       
       .publication img {
@@ -56,10 +59,18 @@ subtitle: My scientific works on academic journals
       }
       .description {
           display: -webkit-box;
-          -webkit-line-clamp: 3; /* Number of lines to show */
+          -webkit-line-clamp: 5; /* Number of lines to show */
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
+      }
+
+      .publication.expanded {
+          max-height: 1000px; /* Adjust as needed to fit the full content */
+          padding-bottom: 20px; /* Add padding for the expanded state */
+      }
+      .publication.expanded .full-description {
+          display: block; /* Show when expanded */
       }
 
       .publication.visible {
@@ -82,6 +93,7 @@ The full list of my publication is available at <a href="https://inspirehep.net/
                 <p class="description"> <strong>Abstract:</strong> 
 We investigate the effects of saturation dynamics on midrapidity flow observables by adding fluctuating hotspots into the novel Monte Carlo EKRT (MC-EKRT) event generator for high-energy nuclear collisions. We demonstrate that the intensity of the saturation effects significantly affects the ratio between the flow coefficients v2 and v3 at the LHC. Adding a hotspot substructure to the nucleons enhances the saturation effects and improves the agreement with the measured data. We show that the collision-energy dependence of the flow coefficients obtained using the MC-EKRT initial states with hotspots is improved in comparison with the earlier event-by-event EKRT model. In addition, we present the results for the charged hadron multiplicity distribution in Pb+Pb collisions at the LHC, and show that the minijet-multiplicity originating fluctuations of the saturation scale included in MC-EKRT, as well as the presence of hotspots, are necessary for describing the measured large-multiplicity tail in the distribution.
                 </p>
+                <p class="full-description"></p>
             </div>
             <img src="/assets/img/Publications/240701338.png" alt="Image" class="publication-image">
         </div>
@@ -94,6 +106,7 @@ We investigate the effects of saturation dynamics on midrapidity flow observable
                 <p class="description"> <strong>Abstract:</strong> 
                  We present a novel Monte-Carlo implementation of the EKRT model, MC-EKRT, for computing partonic initial states in high-energy nuclear collisions. Our new MC-EKRT event generator is based on collinearly factorized, dynamically fluctuating pQCD minijet production, supplemented with a saturation conjecture that controls the low pT particle production. Previously, the EKRT model has been very successful in describing low pT observables at mid-rapidity in heavy-ion collisions at the LHC and RHIC energies. As novel features, our new MC implementation gives a full 3-dimensional initial state event-by-event, includes dynamical minijet-multiplicity fluctuations in the saturation and particle production, introduces a new type of spatially dependent nuclear parton distribution functions, and accounts for the conservation of energy/momentum and valence-quark number. In this proof-of-principle study, we average a large set of event-by-event MC-EKRT initial conditions and compute the rapidity and centrality dependence of the charged hadron multiplicities and elliptic flow for the LHC Pb+Pb and RHIC Au+Au collisions using 3+1 D viscous fluid-dynamical evolution. Also event-by-event fluctuations and decorrelations of initial eccentricities are studied. The good agreement with the rapidity-dependent data suggests that the same saturation mechanism that has been very successful in explaining the mid-rapidity observables, works well also at larger rapidities.
                 </p>
+                <p class="full-description"></p>
             </div>
             <img src="/assets/img/Publications/240617592.png" alt="Image" class="publication-image">
         </div>
@@ -106,6 +119,7 @@ We investigate the effects of saturation dynamics on midrapidity flow observable
                 <p class="description"> <strong>Abstract:</strong> 
                 We analyze Pb+Pb collisions at 2.76 TeV with a novel framework based on the dynamical core-corona picture that describes particle productions from both equilibrium and nonequilibrium components. We remark on the possibility of the contribution from nonequilibrium components in the very low transverse momentum region and show that such contributions significantly affect pT-integrated four-particle cumulants. These results strongly suggest the necessity of nonequilibrium components when one extracts properties of the quark-gluon plasma from experimental data using sophisticated dynamical models based on relativistic hydrodynamics.
                 </p>
+                <p class="full-description"></p>
             </div>
             <img src="/assets/img/Publications/220713966.png" alt="Image" class="publication-image">
         </div>
@@ -120,6 +134,7 @@ We establish the updated version of dynamical core-corona initialization framewo
 centre-of-mass energy of nucleon nucleon collisions 7 TeV and Pb+Pb collisions at 2.76 TeV. We find core contribution overtakes corona contribution as increasing multiplicity above dNdeta~20 regardless of the collision system or energy. We also see that the core contribution exceeds the corona contribution only in 0.0–0.95% multiplicity class in p+p collisions. Notably, there is a small enhancement of corona contribution with ~20% below pT~1 GeV even in minimum bias Pb+Pb collisions. We find that the corona contribution at low pT gives ~15-30% correction on v2{2} at Nch less than ~400. This raises a problem in conventional hydrodynamic analyses 
 in which low pT soft hadrons originate solely from core components. We finally scrutinize the roles of string fragmentation and the longitudinal expansion in the transverse energy per unit rapidity, which is crucial in initial conditions for hydrodynamics from event generators based on string models.
                 </p>
+                <p class="full-description"></p>
             </div>
             <img src="/assets/img/Publications/210807943.png" alt="Image" class="publication-image">
         </div>
@@ -132,6 +147,7 @@ in which low pT soft hadrons originate solely from core components. We finally s
                 <p class="description"> <strong>Abstract:</strong> 
                 We develop the dynamical core-corona initialization framework as a phenomenological description of the formation of quark gluon plasma (QGP) fluids in high-energy nuclear collisions. Using this framework, we investigate the fraction of the fluidized energy to the total energy and strange hadron yield ratios as functions of multiplicity, and we scrutinize the multiplicity scaling of hadron yield ratios recently reported by the ALICE Collaboration. Our results strongly indicate that the QGP fluids are partly formed even at the averaged multiplicity for nonsingle diffractive p+p events.
                 </p>
+                <p class="full-description"></p>
             </div>
             <img src="/assets/img/Publications/191010556.png" alt="Image" class="publication-image">
         </div>
@@ -145,24 +161,13 @@ in which low pT soft hadrons originate solely from core components. We finally s
                 <p class="description"> <strong>Abstract:</strong> 
                 We investigate the enhancement of yields of strange and multi-strange baryons in proton–proton (p+p), proton–lead (p+Pb), and lead–lead (Pb+Pb) collisions at Large Hadron Collider (LHC) energies from a dynamical core–corona initialization model. We first generate partons just after the collisions by using event generators. These partons dynamically generate the quark gluon plasma (QGP) fluids through the source terms in the hydrodynamic equations. According to the core–corona picture, this process tends to happen where the density of generated partons is high and their transverse momentum is low. Some partons do not fully participate in this process when they are in dilute regions or their transverse momentum is high, and subsequently fragment into hadrons through string fragmentation. In this framework, the final hadrons come from either chemically equilibrated fluids as in the conventional hydrodynamic models or string fragmentation. We calculate the ratio of strange baryons to charged pions as a function of multiplicity and find that it monotonically increases up to dNdeta~100 then saturates above. This suggests that the QGP fluids are partly created and that their fraction increases with multiplicity in p+p and p+Pb collisions at LHC energies. 
                 </p>
+                <p class="full-description"></p>
             </div>
             <img src="/assets/img/Publications/180610329.png" alt="Image" class="publication-image">
         </div>
         <!-- Repeat the above block for each publication -->
     </div>
 
-    <!-- Modal Structure -->
-    <div id="publicationModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="Publication Image">
-            <h2 id="modalTitle"></h2>
-            <p><strong>Authors:</strong> <span id="modalAuthors"></span></p>
-            <p><strong>DOI:</strong> <a id="modalDOI" href=""></a></p>
-            <p id="modalDescription"></p>
-        </div>
-    </div>
-
 
     <script src="/assets/js/animations.js"></script>
-    <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/expand.js"></script>
