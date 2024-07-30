@@ -25,8 +25,8 @@ navbar-links:
 #    - Monte-Carlo simulation of high-energy nuclear collisions: "MCEventGenerator"
   Publications: "Publications"
   Talks:
-    - on Research: "TalkResearch"
-    - on Outreach: "TalkOutreach"
+    - Scientific Talks: "TalkResearch"
+    - Outreach: "TalkOutreach"
   Awards: "Awards"
   Links:
     - Linkedin: "https://www.linkedin.com/in/yuuka-kanakubo-7889b5245/"
