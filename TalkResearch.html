@@ -6,10 +6,10 @@ subtitle: Presentations and seminars on physics
 <head>
     <style>
      .presentations {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-        gap: 15px;
-        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
      }
      
      .presentation-card {
@@ -23,14 +23,9 @@ subtitle: Presentations and seminars on physics
          align-items: center;
          transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Animation */
          cursor: pointer; /* Make it clickable */
-         height: 200px; /* Adjusted height */
-         width: 100%; /* Full width of the grid column */
-     }
-     .presentation-image {
-         max-width: 150px; /* Adjust the size as needed */
-         height: auto;
-         border-radius: 8px;
-         margin-left: 20px;
+         margin-bottom: 20px;
+         width: 80%; /* Adjust width as needed */
+         max-width: 800px; /* Ensure it doesn't get too wide */
      }
      
      .presentation-card:hover {
@@ -38,6 +33,13 @@ subtitle: Presentations and seminars on physics
          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
      }
      
+     .presentation-image {
+         max-width: 150px; /* Adjust the size as needed */
+         height: auto;
+         border-radius: 8px;
+         margin-left: 20px;
+         object-fit: cover;
+     }
      .presentation-content {
          text-align: left;
          flex: 1; /* Take up remaining space */
