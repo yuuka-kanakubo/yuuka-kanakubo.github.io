@@ -26,7 +26,7 @@ navbar-links:
   Publications: "Publications"
   Talks:
     - Scientific Talks: "TalkResearch"
-    - Outreach: "TalkOutreach"
+#    - Outreach: "TalkOutreach"
   Awards: "Awards"
   Links:
     - Linkedin: "https://www.linkedin.com/in/yuuka-kanakubo-7889b5245/"
