@@ -65,7 +65,7 @@ social-network-links:
   github: yuuka-kanakubo
   linkedin: yuuka-kanakubo-7889b5245
   instagram: yuuka_kanakubo
-#  X: yuuka_kanakubo
+  twitter: yuuka_kanakubo
 #  youtube: "@daattali"
 #  whatsapp: 15551212
 #  medium: yourname
@@ -116,7 +116,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "Yuuka,Kanakubo,physics,blog,postdoc"
+keywords: "Yuuka, Kanakubo, physics, blog, postdoc, QGP, quark-gluon plasma"
 
 ######################################
 # --- Colours / background image --- #
