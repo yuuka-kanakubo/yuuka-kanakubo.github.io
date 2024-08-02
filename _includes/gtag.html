@@ -1,11 +1,11 @@
 {% if site.gtag %}
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W16SM1TVPH"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gtag }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-W16SM1TVPH');
+  gtag('config', '{{ site.gtag }}');
 </script>
 {% endif %}
