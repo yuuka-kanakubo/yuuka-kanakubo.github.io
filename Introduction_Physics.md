@@ -12,6 +12,11 @@ These elements, each with different properties, have a periodic nature — corre
 Let’s take a familiar example — carbon, an atom with atomic number 6 and mass number 12. The atomic number represents the number of protons contained in nucleus, and the mass number is the total number of protons and neutrons in nucleus.
 Therefore, we can see that a carbon atom is made up of six protons and six neutrons.
 
+![Bohrmodel](assets/img/MCEventGenerator/Bohrmodel_carbon.png)
+
+I guess many people have seen this kind of illustration of an atom.
+Nucleus stays in the middle, and electrons orbit around the nucleus. Protons and neutrons sit in the nucleus.
+
 
 
 
