@@ -14,11 +14,15 @@ Therefore, we can see that a carbon atom is made up of six protons and six neutr
 
 ![Bohrmodel](assets/img/MCEventGenerator/Bohrmodel_carbon.png)
 
-I guess many people have seen this kind of illustration of an atom.
-Nucleus stays in the middle, and electrons orbit around the nucleus. Protons and neutrons sit in the nucleus.
+I guess many people have seen this kind of illustration of an atom:
+the nucleus at the center, with electrons orbiting around it, and protons and neutrons sitting inside the nucleus.
 
+There is a warning, however — this illustration is not precise in several senses.
 
+One important thing to keep in mind is that the nucleus is about $10^{-5} = 0.00001$ times smaller than the atom.
+If an atom were the size of San Francisco (roughly 10 km across), the nucleus would be about the size of an apple (around 10 cm).
 
+Therefore, the matter around us — including our own bodies — is far more hollow than one might imagine.
 
 
 <!--
