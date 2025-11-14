@@ -2,17 +2,23 @@
 layout: post
 title: Elements of matter
 subtitle: What are we made of?
+cover-img: ../../assets/img/MCEventGenerator/Carbon.png
+<!---thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg-->
+tags: [blog]
+readtime: true
+<!--author: Yuuka Kanakubo-->
 ---
 
 When someone asks, “What are the substances around us made of?”, what comes to your mind?
 These elements, each with different properties, have a periodic nature — corresponding to their atomic numbers and electron configurations — and this regularity is beautifully represented in the periodic table, which I think we learn about in schools.
 
-![Carbon](assets/img/MCEventGenerator/Carbon.png)
+![Carbon](../../assets/img/MCEventGenerator/Carbon.png)
 
 Let’s take a familiar example — carbon, an atom with atomic number 6 and mass number 12. The atomic number represents the number of protons contained in nucleus, and the mass number is the total number of protons and neutrons in nucleus.
 Therefore, we can see that a carbon atom is made up of six protons and six neutrons.
 
-![Bohrmodel](assets/img/MCEventGenerator/Bohrmodel_carbon.png)
+![Bohrmodel](../../assets/img/MCEventGenerator/Bohrmodel_carbon.png)
 
 I guess many people have seen this kind of illustration of an atom:
 the nucleus at the center, with electrons orbiting around it, and protons and neutrons sitting inside the nucleus.
