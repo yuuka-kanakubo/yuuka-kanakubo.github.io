@@ -5,7 +5,7 @@ subtitle: What are we made of?
 cover-img: ../../assets/img/MCEventGenerator/Carbon.png
 <!---thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg-->
-tags: [blog]
+tags: [phys-intro]
 readtime: true
 <!--author: Yuuka Kanakubo-->
 ---
