@@ -25,10 +25,12 @@ the nucleus at the center, with electrons orbiting around it, and protons and ne
 
 There is a warning, however — this illustration is not precise in several senses.
 
-One important thing to keep in mind is that the nucleus is about $10^{-5} = 0.00001$ times smaller than the atom.
+One important thing to keep in mind is that the nucleus is about $10^{-5} = 0.00001$ times smaller than an atom: the size of the atom is about $10^{-10}$ m, while that of the nucleus is $10^{-15}$ m.
 If an atom were the size of San Francisco (roughly 10 km across), the nucleus would be about the size of an apple (around 10 cm).
 
 Therefore, the matter around us — including our own bodies — is far more hollow than one might imagine.
+
+![AtomNucleusNucleons](../../assets/img/MCEventGenerator/AtomNucleusNucleons.png)
 
 
 <!--
