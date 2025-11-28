@@ -8,5 +8,6 @@ subtitle: Collection of small readings
 
 - [What are we made of?](/articles/introduction/WhatAreWeMadeOf.md)
 - [What binds protons and neutrons?](/articles/introduction/StrongForce.md)
+- [Properties of matter](/articles/introduction/PropertiesOfMatter.md)
 
 *Coming soon!*
