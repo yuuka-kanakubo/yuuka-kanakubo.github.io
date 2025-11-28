@@ -28,5 +28,6 @@ This is what we call static "properties of matter" which appears when you have a
 
 
 ![QGP](../../assets/img/MCEventGenerator/QuarkGluonPlasma.png)
+
 The same concept applies to quarks and gluons too. At low temperatures, quarks and gluons are confined into hadrons (protons and neutrons are one of them). Once you heat up hadrons, there will be a state where quarks and gluons can move freely at very high temperatures. This state is so called "quark-gluon plasma", and my scientific interest is to investigate its properties.
 
