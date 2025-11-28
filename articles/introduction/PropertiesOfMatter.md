@@ -24,3 +24,9 @@ In this kind of system, it is usually useful and practical to characterize the s
 
 And you all know that at low temperatures below 0 celcius degree, water exists as ice, and it melts and becomes water when you heat it up. Above 100 celcius degrees, it eventually becomes vaper.
 This is what we call static "properties of matter" which appears when you have a lot of molecules!
+
+
+
+![QGP](../../assets/img/MCEventGenerator/QuarkGluonPlasma.png)
+The same concept applies to quarks and gluons too. At low temperatures, quarks and gluons are confined into hadrons (protons and neutrons are one of them). Once you heat up hadrons, there will be a state where quarks and gluons can move freely at very high temperatures. This state is so called "quark-gluon plasma", and my scientific interest is to investigate its properties.
+
